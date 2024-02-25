@@ -1,0 +1,61 @@
+/* 平板
+----------------------------------------------- */
+#pad {
+	border: 1px solid #DDD;
+	-moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+	width: 900px;
+	margin: 80px auto 0 auto;
+	padding: 15px 0 15px 15px;
+	background-color:#F4F4F4;
+}
+/* 手机
+----------------------------------------------- */
+#mobile {
+	border: 1px solid #DDD;
+	-moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+	width: 340px;
+	margin: 80px auto 0 auto;
+	padding: 15px 0 15px 15px;
+	background-color:#F4F4F4;
+}
+/* 演示工具
+----------------------------------------------- */
+#demoTool {
+	font-family: Microsoft Yahei, \5FAE\8F6F\96C5\9ED1, \5b8b\4f53, Arial, Lucida, Verdana, Helvetica, sans-serif;
+	position: fixed;
+	_position: absolute;
+ _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight)-107+"px");
+	top: 50%;
+	margin-top: -107px;
+	left: 0;
+	z-index: 99999;
+	border: 2px solid #FFF;
+	border-left: 0;
+}
+@media(max-width:1000px) {
+	#demoTool {
+		display: none;
+	}
+}
+#demoTool .demoHead {
+	background-color: #CCC;
+	color: #555;
+	padding: 10px 10px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+}
+#demoTool .demoAction a {
+	display: block;
+	padding: 3px 10px;
+	background-color: #EEE;
+	color: #555;
+	font-size: 13px;
+}
+#demoTool .demoAction a:hover, #demoTool .demoAction a.demoCur {
+	background-color: #19B4EA;
+	color: #FFF;
+	text-decoration: none;
+}
